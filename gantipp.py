@@ -12,8 +12,6 @@ print('[ DEBUG ] Starting Bot')
 client.log("Auth Token : " + str(client.authToken))
 channel = LineChannel(client)
 
-# object = LineObject(client) #this is for trial :3 ignore this
-
 client.log("Channel Access Token : " + str(channel.channelAccessToken))
 
 poll = LinePoll(client)
