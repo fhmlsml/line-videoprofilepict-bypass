@@ -3,13 +3,11 @@ from akad.ttypes import Message
 from .auth import LineAuth
 from .models import LineModels
 from .talk import LineTalk
-from .square import LineSquare
-from .call import LineCall
 from random import randint
 
 import json
 
-class LineClient(LineAuth, LineModels, LineTalk, LineSquare, LineCall):
+class LineClient(LineAuth, LineModels, LineTalk):
 
     customThrift = None
 
@@ -30,5 +28,3 @@ class LineClient(LineAuth, LineModels, LineTalk, LineSquare, LineCall):
 
         LineModels.__init__(self)
         LineTalk.__init__(self)
-        LineSquare.__init__(self)
-        LineCall.__init__(self)
