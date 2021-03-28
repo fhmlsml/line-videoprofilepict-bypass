@@ -47,7 +47,7 @@ while True:
 								client.sendChatChecked(receiver, msg_id)
 								contact = client.getContact(sender)
 								if text.lower() == '/update': # you can change this command whatever you want :3
-									client.sendMessage(receiver, "Proses...")
+									client.sendMessage(receiver, "Processing...")
 
 									# use video.mp4 file name for your video profile pic, or you can edit whatever you want
 									client.updateProfileVideoPicture('video.mp4') 
