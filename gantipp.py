@@ -6,7 +6,7 @@ print('[ DEBUG ] Starting Bot')
 # choose your login method below by uncomment it
 
 # client = LineClient(id='your_line_email@email.com', passwd='your_line_password') -> email & pass
-# client = LineClient(authToken='using_token') -> token
+# client = LineClient(authToken='using_token') -> your token
 # client = LineClient() -> QR (not working anymore)
 
 client.log("Auth Token : " + str(client.authToken))
@@ -54,7 +54,7 @@ while True:
 									# this method above is in the /linepy/object.py file, you can edit image.png in the "path_p" variable whatever you want
 
 									client.sendMessage(receiver,"Update Video Profile & Pict Success")
-									client.sendMessage(receiver, "Terima Kasih Sudah Menggunakan Bot ini ^_^\n\n Created By: Altair (semara inc), Fhmisml, linepy")
+									client.sendMessage(receiver, "Terima Kasih Sudah Menggunakan Bot ini ^_^\n\n Created By: LinePy, Altair (semara inc), Fhmisml")
 					except Exception as d:
 						print('[ERROR] You Got Error On Chat Bot Command Section :p')
 						print(str(d))
